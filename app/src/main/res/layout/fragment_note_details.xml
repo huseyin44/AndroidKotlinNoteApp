@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NoteDetailsFragment">
+
+
+    <EditText
+        android:id="@+id/notetitle_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="48dp"
+        android:ems="10"
+        android:hint="Title"
+        android:inputType="textPersonName"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/notedetail_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/notedetail_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="108dp"
+        android:ems="10"
+        android:hint="Note"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/updatebutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notetitle_text" />
+
+    <android.widget.Button
+        android:id="@+id/savebutton"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:text="Save"
+        android:textSize="25sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/updatebutton"
+        app:layout_constraintEnd_toEndOf="@+id/updatebutton"
+        app:layout_constraintStart_toStartOf="@+id/updatebutton"></android.widget.Button>
+
+    <android.widget.Button
+        android:id="@+id/updatebutton"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="118dp"
+        android:layout_marginBottom="178dp"
+        android:text="update"
+        android:textSize="25sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notedetail_text"></android.widget.Button>
+
+    <android.widget.Button
+        android:id="@+id/deletebutton"
+        android:layout_width="140dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="128dp"
+        android:background="#D86464"
+        android:text="delete"
+        android:visibility="invisible"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.467"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/updatebutton">
+
+    </android.widget.Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
